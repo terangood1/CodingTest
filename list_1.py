@@ -1,3 +1,5 @@
+#https://www.acmicpc.net/step/6 1번문제
+
 from sys import stdin
 
 a = int(stdin.readline())
