@@ -5,15 +5,21 @@ from sys import stdin
 n = int(stdin.readline())
 result = []
 
-sum = 0
 for i in range(n):
     result.append(stdin.readline().strip())
-score = 0
-last_score = 0
+
+score_list = []
 for k in result:
-    if k == 'o':
-        score +=1
-        last_score += score
-    else:
-        score = 0
-print(score)
+    score = 0
+    last_score = 0
+    for j in k:
+        if j == 'O':
+            score +=1
+            last_score += score
+        else:
+            score = 0
+    score_list.append(last_score)
+
+
+for i in score_list:
+    print(i)
