@@ -7,8 +7,24 @@
 
 
 #몇 몇호에 사는 함수 하나 만들고 결과를 더한다
-a = 3
-b = 4
-def add(a,b):
+def home(a,b):
+    
     return a+b
+
+
+#테스트 케이스 입력
+t = int(input())
+
+#결과 저장
+result = []
+
+#입력값 
+for i in range(t):
+    a = int(input())
+    b = int(input())
+    result.append(home(a,b))
+
+#결과 출력
+for i in result:
+    print(i)
 
