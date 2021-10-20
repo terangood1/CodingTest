@@ -4,7 +4,6 @@ result=[]
 
 for i in range(a,b+1):
     if i!=1:
-        
         if i==2:
             result.append(i)
         else:
